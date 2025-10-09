@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "contentful-content-model",
+  "packageManager": "pnpm@10.17.1",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+  },
+  "devDependencies": {
+    "@types/node": "22.18.8"
+  }
+}
