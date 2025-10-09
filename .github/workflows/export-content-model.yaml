@@ -23,6 +23,9 @@ jobs:
           CONTENTFUL_SPACE_ID: ${{ vars.CONTENTFUL_SPACE_ID }}
           CONTENTFUL_MANAGEMENT_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_MANAGEMENT_ACCESS_TOKEN }}
 
+      - name: cf-content-types:generate
+        run: pnpm run cf-content-types:generate
+
       - name: create pull request
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
         with:
