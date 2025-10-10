@@ -1,6 +1,6 @@
-export { isTypeAuthor } from "./TypeAuthor";
-export type { TypeAuthor, TypeAuthorFields, TypeAuthorSkeleton } from "./TypeAuthor";
-export { isTypeMetadatatest } from "./TypeMetadatatest";
-export type { TypeMetadatatest, TypeMetadatatestFields, TypeMetadatatestSkeleton } from "./TypeMetadatatest";
-export { isTypePage } from "./TypePage";
-export type { TypePage, TypePageFields, TypePageSkeleton } from "./TypePage";
+export { isTypeAuthor } from "./TypeAuthor.ts";
+export type { TypeAuthor, TypeAuthorFields, TypeAuthorSkeleton } from "./TypeAuthor.ts";
+export { isTypeMetadatatest } from "./TypeMetadatatest.ts";
+export type { TypeMetadatatest, TypeMetadatatestFields, TypeMetadatatestSkeleton } from "./TypeMetadatatest.ts";
+export { isTypePage } from "./TypePage.ts";
+export type { TypePage, TypePageFields, TypePageSkeleton } from "./TypePage.ts";
