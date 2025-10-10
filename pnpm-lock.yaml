@@ -7,6 +7,11 @@ settings:
 
 pnpmfileChecksum: sha256-UtXZV825NqHOBG69jsYGuWZ97+do7mk2t42sK5gvG2I=
 
+patchedDependencies:
+  cf-content-types-generator:
+    hash: f41360662c445310bbb25717bbd2827eeac645d768cdce01f09b4635fea56a66
+    path: patches/cf-content-types-generator.patch
+
 importers:
 
   .:
@@ -19,7 +24,7 @@ importers:
         version: 0.2.0
       cf-content-types-generator:
         specifier: 2.16.1
-        version: 2.16.1
+        version: 2.16.1(patch_hash=f41360662c445310bbb25717bbd2827eeac645d768cdce01f09b4635fea56a66)
       contentful-export:
         specifier: 7.21.90
         version: 7.21.90
@@ -1308,7 +1313,7 @@ snapshots:
       ansicolors: 0.3.2
       redeyed: 2.1.1
 
-  cf-content-types-generator@2.16.1:
+  cf-content-types-generator@2.16.1(patch_hash=f41360662c445310bbb25717bbd2827eeac645d768cdce01f09b4635fea56a66):
     dependencies:
       '@oclif/core': 3.27.0
       '@oclif/plugin-help': 6.2.33

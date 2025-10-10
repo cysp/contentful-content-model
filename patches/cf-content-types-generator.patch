@@ -1,0 +1,61 @@
+diff --git a/lib/cf-definitions-builder.js b/lib/cf-definitions-builder.js
+index 02bc20808638b56fa9d260c1c5ad36b0602e4de5..ed0c8d4a8e9085e8a59cb48f444609d366da8487 100644
+--- a/lib/cf-definitions-builder.js
++++ b/lib/cf-definitions-builder.js
+@@ -131,7 +131,7 @@ class CFDefinitionsBuilder {
+                             return f.getName() === exportDeclaration.getExportSymbol().getName();
+                         }),
+                         namedExports: [exportDeclaration.getExportSymbol().getEscapedName()],
+-                        moduleSpecifier: `./${sourceFile.getBaseNameWithoutExtension()}`,
++                        moduleSpecifier: `./${sourceFile.getBaseNameWithoutExtension()}.ts`,
+                     });
+                 }
+             }
+diff --git a/lib/property-imports.js b/lib/property-imports.js
+index 5ae396c7f36fe630a7816916e36a295d57ec3d4b..e9450e84d71ce5e9b369e0e542b2636cb7059a9f 100644
+--- a/lib/property-imports.js
++++ b/lib/property-imports.js
+@@ -6,7 +6,7 @@ const propertyImports = (field, context, ignoreModule) => {
+     const filterIgnoredModule = (name) => ignoreModule !== context.moduleName(name);
+     const moduleImport = (module) => {
+         return {
+-            moduleSpecifier: `./${context.moduleName(module)}`,
++            moduleSpecifier: `./${context.moduleName(module)}.ts`,
+             namedImports: [context.moduleReferenceName(module)],
+             isTypeOnly: true,
+         };
+diff --git a/lib/renderer/type/localized-content-type-renderer.js b/lib/renderer/type/localized-content-type-renderer.js
+index ed8af933eca9fff1c1aabac2ddda279e08a846e9..1a353cfe0d07335f8ce2fb01535ee834d187fcbd 100644
+--- a/lib/renderer/type/localized-content-type-renderer.js
++++ b/lib/renderer/type/localized-content-type-renderer.js
+@@ -11,7 +11,7 @@ class LocalizedContentTypeRenderer extends base_content_type_renderer_1.BaseCont
+         this.files = [];
+     }
+     setup(project) {
+-        const file = project.createSourceFile(`${this.FILE_BASE_NAME}.ts`, 
++        const file = project.createSourceFile(`${this.FILE_BASE_NAME}.ts`,
+         // eslint-disable-next-line no-warning-comments
+         // TODO: read from template file
+         undefined, {
+@@ -53,7 +53,7 @@ class LocalizedContentTypeRenderer extends base_content_type_renderer_1.BaseCont
+             type: (0, generic_1.renderTypeGeneric)('LocalizedEntry', `${context.moduleName(contentType.sys.id)}, Locales`),
+         });
+         context.imports.add({
+-            moduleSpecifier: `./${this.FILE_BASE_NAME}`,
++            moduleSpecifier: `./${this.FILE_BASE_NAME}.ts`,
+             namedImports: ['LocalizedFields', 'LocalizedEntry'],
+             isTypeOnly: true,
+         });
+diff --git a/lib/renderer/type/type-guard-renderer.js b/lib/renderer/type/type-guard-renderer.js
+index 9af64525507299a662f295c2b11d99ce3ba929b8..6516f3d48af2a482364a8f17ad3ed978e54987b9 100644
+--- a/lib/renderer/type/type-guard-renderer.js
++++ b/lib/renderer/type/type-guard-renderer.js
+@@ -26,7 +26,7 @@ class TypeGuardRenderer extends base_content_type_renderer_1.BaseContentTypeRend
+     render = (contentType, file) => {
+         const entryInterfaceName = (0, module_name_1.moduleName)(contentType.sys.id);
+         file.addImportDeclaration({
+-            moduleSpecifier: `./${TypeGuardRenderer.WithContentTypeLink}`,
++            moduleSpecifier: `./${TypeGuardRenderer.WithContentTypeLink}.ts`,
+             namedImports: [TypeGuardRenderer.WithContentTypeLink],
+             isTypeOnly: true,
+         });
