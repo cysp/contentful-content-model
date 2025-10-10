@@ -1,0 +1,45 @@
+{
+  "code": "en-AU",
+  "contentDeliveryApi": {},
+  "contentManagementApi": {},
+  "default": {},
+  "fallbackCode": null,
+  "name": "English (Australia)",
+  "optional": {},
+  "sys": {
+    "createdAt": "2024-06-30T03:04:08Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link",
+        "uuid": "5a9a17d7-7382-443d-b935-e641701c2f91"
+      }
+    },
+    "id": "2EElC09UknSbiccBgPK9ib",
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "Locale",
+    "updatedAt": "2024-07-26T14:21:28Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "version": 2
+  }
+}

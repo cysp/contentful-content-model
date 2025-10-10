@@ -1,0 +1,78 @@
+{
+  "description": "Content type for testing metadata fields",
+  "displayField": "title",
+  "fields": [
+    {
+      "defaultValue": {
+        "en-AU": "Default Title",
+        "en-CA": "Default Title"
+      },
+      "disabled": {},
+      "id": "title",
+      "localized": {},
+      "name": "Title",
+      "omitted": {},
+      "required": {},
+      "type": "Symbol",
+      "validations": []
+    }
+  ],
+  "metadata": {
+    "taxonomy": [
+      {
+        "required": {},
+        "sys": {
+          "id": "furniture",
+          "linkType": "TaxonomyConceptScheme",
+          "type": "Link"
+        }
+      },
+      {
+        "required": {},
+        "sys": {
+          "id": "livingRoomFurniture",
+          "linkType": "TaxonomyConcept",
+          "type": "Link"
+        }
+      }
+    ]
+  },
+  "name": "Metadata Test",
+  "sys": {
+    "createdAt": "2025-06-01T02:06:08.805Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link"
+      }
+    },
+    "id": "test_page_12345",
+    "publishedCounter": 0,
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "ContentType",
+    "updatedAt": "2025-06-01T02:06:08.805Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/test_page_12345",
+    "version": 1
+  }
+}

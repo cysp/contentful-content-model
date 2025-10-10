@@ -1,0 +1,123 @@
+{
+  "description": "An author of content",
+  "displayField": "name",
+  "fields": [
+    {
+      "disabled": {},
+      "id": "name",
+      "localized": {},
+      "name": "Name",
+      "omitted": {},
+      "required": {},
+      "type": "Symbol",
+      "validations": []
+    },
+    {
+      "disabled": {},
+      "id": "avatar",
+      "linkType": "Asset",
+      "localized": {},
+      "name": "Avatar",
+      "omitted": {},
+      "required": {},
+      "type": "Link",
+      "validations": []
+    },
+    {
+      "disabled": {},
+      "id": "blurb",
+      "localized": {},
+      "name": "Blurb",
+      "omitted": {},
+      "required": {},
+      "type": "RichText",
+      "validations": [
+        {
+          "enabledMarks": [
+            "bold",
+            "italic",
+            "underline",
+            "code",
+            "superscript",
+            "subscript",
+            "strikethrough"
+          ],
+          "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+        },
+        {
+          "enabledNodeTypes": [
+            "heading-1",
+            "heading-2",
+            "heading-3",
+            "heading-4",
+            "heading-5",
+            "heading-6",
+            "ordered-list",
+            "unordered-list",
+            "hr",
+            "blockquote",
+            "embedded-entry-block",
+            "embedded-asset-block",
+            "table",
+            "hyperlink",
+            "entry-hyperlink",
+            "asset-hyperlink",
+            "embedded-entry-inline"
+          ],
+          "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+        },
+        {
+          "nodes": {}
+        }
+      ]
+    }
+  ],
+  "name": "Author",
+  "sys": {
+    "createdAt": "2024-06-30T03:28:37.193Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link"
+      }
+    },
+    "firstPublishedAt": "2024-06-30T03:28:37.717Z",
+    "id": "author",
+    "publishedAt": "2025-08-30T05:23:01.173Z",
+    "publishedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "publishedCounter": 18,
+    "publishedVersion": 35,
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "ContentType",
+    "updatedAt": "2025-08-30T05:23:01.173Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/author",
+    "version": 36
+  }
+}

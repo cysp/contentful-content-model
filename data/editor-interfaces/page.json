@@ -1,0 +1,112 @@
+{
+  "controls": [
+    {
+      "fieldId": "title",
+      "widgetId": "singleLine",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "fieldId": "slug",
+      "widgetId": "slugEditor",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "fieldId": "author",
+      "settings": {
+        "showCreateEntityAction": {},
+        "showLinkEntityAction": {}
+      },
+      "widgetId": "entryCardEditor",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "fieldId": "body",
+      "widgetId": "richTextEditor",
+      "widgetNamespace": "builtin"
+    }
+  ],
+  "editorLayout": [
+    {
+      "groupId": "content",
+      "items": [
+        {
+          "groupId": "meta",
+          "items": [
+            {
+              "fieldId": "title"
+            },
+            {
+              "fieldId": "slug"
+            }
+          ],
+          "name": "Meta"
+        },
+        {
+          "fieldId": "author"
+        },
+        {
+          "fieldId": "body"
+        }
+      ],
+      "name": "Content"
+    }
+  ],
+  "groupControls": [
+    {
+      "groupId": "content",
+      "widgetId": "topLevelTab",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "groupId": "meta",
+      "settings": {
+        "collapsedByDefault": {},
+        "helpText": ""
+      },
+      "widgetId": "fieldset",
+      "widgetNamespace": "builtin"
+    }
+  ],
+  "sys": {
+    "contentType": {
+      "sys": {
+        "id": "page",
+        "linkType": "ContentType",
+        "type": "Link"
+      }
+    },
+    "createdAt": "2024-08-02T14:25:39.194Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link"
+      }
+    },
+    "id": "default",
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "EditorInterface",
+    "updatedAt": "2025-04-28T06:37:55.623Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "version": 62
+  }
+}
