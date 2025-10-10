@@ -32,6 +32,7 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "useDefineForClassFields": true,
-    "useUnknownInCatchVariables": true
+    "useUnknownInCatchVariables": true,
+    "verbatimModuleSyntax": true
   }
 }

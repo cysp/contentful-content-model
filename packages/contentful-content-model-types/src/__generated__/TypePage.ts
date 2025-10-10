@@ -1,5 +1,5 @@
 import type { ChainModifiers, Entry, EntryFieldTypes, EntrySkeletonType, LocaleCode } from "contentful";
-import type { TypeAuthorSkeleton } from "./TypeAuthor";
+import type { TypeAuthorSkeleton } from "./TypeAuthor.ts";
 
 export interface TypePageFields {
     title?: EntryFieldTypes.Symbol;
