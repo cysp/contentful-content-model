@@ -1,4 +1,4 @@
-name: Export Content Model
+name: export content model
 
 on:
   workflow_dispatch:
