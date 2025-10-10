@@ -1,0 +1,795 @@
+{
+  "contentTypes": [
+    {
+      "description": "An author of content",
+      "displayField": "name",
+      "fields": [
+        {
+          "disabled": {},
+          "id": "name",
+          "localized": {},
+          "name": "Name",
+          "omitted": {},
+          "required": {},
+          "type": "Symbol",
+          "validations": []
+        },
+        {
+          "disabled": {},
+          "id": "avatar",
+          "linkType": "Asset",
+          "localized": {},
+          "name": "Avatar",
+          "omitted": {},
+          "required": {},
+          "type": "Link",
+          "validations": []
+        },
+        {
+          "disabled": {},
+          "id": "blurb",
+          "localized": {},
+          "name": "Blurb",
+          "omitted": {},
+          "required": {},
+          "type": "RichText",
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {}
+            }
+          ]
+        }
+      ],
+      "name": "Author",
+      "sys": {
+        "createdAt": "2024-06-30T03:28:37.193Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link"
+          }
+        },
+        "firstPublishedAt": "2024-06-30T03:28:37.717Z",
+        "id": "author",
+        "publishedAt": "2025-08-30T05:23:01.173Z",
+        "publishedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "publishedCounter": 18,
+        "publishedVersion": 35,
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "ContentType",
+        "updatedAt": "2025-08-30T05:23:01.173Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/author",
+        "version": 36
+      }
+    },
+    {
+      "description": "",
+      "displayField": "title",
+      "fields": [
+        {
+          "defaultValue": {
+            "en-AU": "title"
+          },
+          "disabled": {},
+          "id": "title",
+          "localized": {},
+          "name": "Title",
+          "omitted": {},
+          "required": {},
+          "type": "Symbol",
+          "validations": []
+        },
+        {
+          "disabled": {},
+          "id": "slug",
+          "localized": {},
+          "name": "Slug",
+          "omitted": {},
+          "required": {},
+          "type": "Symbol",
+          "validations": [
+            {
+              "unique": {}
+            }
+          ]
+        },
+        {
+          "disabled": {},
+          "id": "author",
+          "linkType": "Entry",
+          "localized": {},
+          "name": "Author",
+          "omitted": {},
+          "required": {},
+          "type": "Link",
+          "validations": [
+            {
+              "linkContentType": [
+                "author"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": {},
+          "id": "body",
+          "localized": {},
+          "name": "Body",
+          "omitted": {},
+          "required": {},
+          "type": "RichText",
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {}
+            }
+          ]
+        }
+      ],
+      "name": "Page",
+      "sys": {
+        "createdAt": "2024-08-02T14:25:38.540Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link"
+          }
+        },
+        "firstPublishedAt": "2024-08-02T14:25:39.029Z",
+        "id": "page",
+        "publishedAt": "2025-04-28T06:37:54.688Z",
+        "publishedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "publishedCounter": 25,
+        "publishedVersion": 49,
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "ContentType",
+        "updatedAt": "2025-04-28T06:37:54.688Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/page",
+        "version": 50
+      }
+    },
+    {
+      "description": "Content type for testing metadata fields",
+      "displayField": "title",
+      "fields": [
+        {
+          "defaultValue": {
+            "en-AU": "Default Title",
+            "en-CA": "Default Title"
+          },
+          "disabled": {},
+          "id": "title",
+          "localized": {},
+          "name": "Title",
+          "omitted": {},
+          "required": {},
+          "type": "Symbol",
+          "validations": []
+        }
+      ],
+      "metadata": {
+        "taxonomy": []
+      },
+      "name": "Metadata Test",
+      "sys": {
+        "createdAt": "2025-05-28T12:27:31.200Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link"
+          }
+        },
+        "firstPublishedAt": "2025-05-28T12:27:31.717Z",
+        "id": "metadatatest",
+        "publishedAt": "2025-05-28T13:20:17.445Z",
+        "publishedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "publishedCounter": 13,
+        "publishedVersion": 25,
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "ContentType",
+        "updatedAt": "2025-06-01T02:08:31.965Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/metadatatest",
+        "version": 29
+      }
+    },
+    {
+      "description": "Content type for testing metadata fields",
+      "displayField": "title",
+      "fields": [
+        {
+          "defaultValue": {
+            "en-AU": "Default Title",
+            "en-CA": "Default Title"
+          },
+          "disabled": {},
+          "id": "title",
+          "localized": {},
+          "name": "Title",
+          "omitted": {},
+          "required": {},
+          "type": "Symbol",
+          "validations": []
+        }
+      ],
+      "metadata": {
+        "taxonomy": [
+          {
+            "required": {},
+            "sys": {
+              "id": "furniture",
+              "linkType": "TaxonomyConceptScheme",
+              "type": "Link"
+            }
+          },
+          {
+            "required": {},
+            "sys": {
+              "id": "livingRoomFurniture",
+              "linkType": "TaxonomyConcept",
+              "type": "Link"
+            }
+          }
+        ]
+      },
+      "name": "Metadata Test",
+      "sys": {
+        "createdAt": "2025-06-01T02:06:08.805Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link"
+          }
+        },
+        "id": "test_page_12345",
+        "publishedCounter": 0,
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "ContentType",
+        "updatedAt": "2025-06-01T02:06:08.805Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/test_page_12345",
+        "version": 1
+      }
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "avatar",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "blurb",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ],
+      "editorLayout": [
+        {
+          "groupId": "name",
+          "items": [
+            {
+              "fieldId": "name"
+            }
+          ],
+          "name": "Name"
+        },
+        {
+          "groupId": "profile",
+          "items": [
+            {
+              "groupId": "profile_about",
+              "items": [
+                {
+                  "fieldId": "avatar"
+                },
+                {
+                  "fieldId": "blurb"
+                }
+              ],
+              "name": "About"
+            }
+          ],
+          "name": "Profile"
+        }
+      ],
+      "groupControls": [
+        {
+          "groupId": "name",
+          "widgetId": "topLevelTab",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "groupId": "profile",
+          "widgetId": "topLevelTab",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "groupId": "profile_about",
+          "widgetId": "fieldSet",
+          "widgetNamespace": "builtin"
+        }
+      ],
+      "sidebar": [
+        {
+          "disabled": {},
+          "settings": {},
+          "widgetId": "1WkQ2J9LERPtbMTdUfSHka",
+          "widgetNamespace": "app"
+        }
+      ],
+      "sys": {
+        "contentType": {
+          "sys": {
+            "id": "author",
+            "linkType": "ContentType",
+            "type": "Link"
+          }
+        },
+        "createdAt": "2024-06-30T03:28:37.830Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link"
+          }
+        },
+        "id": "default",
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "EditorInterface",
+        "updatedAt": "2025-08-30T05:23:01.323Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "version": 51
+      }
+    },
+    {
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "settings": {
+            "showCreateEntityAction": {},
+            "showLinkEntityAction": {}
+          },
+          "widgetId": "entryCardEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ],
+      "editorLayout": [
+        {
+          "groupId": "content",
+          "items": [
+            {
+              "groupId": "meta",
+              "items": [
+                {
+                  "fieldId": "title"
+                },
+                {
+                  "fieldId": "slug"
+                }
+              ],
+              "name": "Meta"
+            },
+            {
+              "fieldId": "author"
+            },
+            {
+              "fieldId": "body"
+            }
+          ],
+          "name": "Content"
+        }
+      ],
+      "groupControls": [
+        {
+          "groupId": "content",
+          "widgetId": "topLevelTab",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "groupId": "meta",
+          "settings": {
+            "collapsedByDefault": {},
+            "helpText": ""
+          },
+          "widgetId": "fieldset",
+          "widgetNamespace": "builtin"
+        }
+      ],
+      "sys": {
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "linkType": "ContentType",
+            "type": "Link"
+          }
+        },
+        "createdAt": "2024-08-02T14:25:39.194Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link"
+          }
+        },
+        "id": "default",
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "EditorInterface",
+        "updatedAt": "2025-04-28T06:37:55.623Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "version": 62
+      }
+    },
+    {
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ],
+      "sys": {
+        "contentType": {
+          "sys": {
+            "id": "metadatatest",
+            "linkType": "ContentType",
+            "type": "Link"
+          }
+        },
+        "createdAt": "2025-05-28T12:27:31.884Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link"
+          }
+        },
+        "id": "default",
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "EditorInterface",
+        "updatedAt": "2025-05-28T13:20:17.598Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "version": 14
+      }
+    }
+  ],
+  "locales": [
+    {
+      "code": "en-AU",
+      "contentDeliveryApi": {},
+      "contentManagementApi": {},
+      "default": {},
+      "fallbackCode": null,
+      "name": "English (Australia)",
+      "optional": {},
+      "sys": {
+        "createdAt": "2024-06-30T03:04:08Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link",
+            "uuid": "5a9a17d7-7382-443d-b935-e641701c2f91"
+          }
+        },
+        "id": "2EElC09UknSbiccBgPK9ib",
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "Locale",
+        "updatedAt": "2024-07-26T14:21:28Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "version": 2
+      }
+    },
+    {
+      "code": "en-CA",
+      "contentDeliveryApi": {},
+      "contentManagementApi": {},
+      "default": {},
+      "fallbackCode": "en-AU",
+      "name": "English (Canada)",
+      "optional": {},
+      "sys": {
+        "createdAt": "2025-05-28T13:14:53Z",
+        "createdBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "linkType": "Environment",
+            "type": "Link",
+            "uuid": "5a9a17d7-7382-443d-b935-e641701c2f91"
+          }
+        },
+        "id": "5bEdTq1ah9h5lYOdHICIES",
+        "space": {
+          "sys": {
+            "id": "0p38pssr0fi3",
+            "linkType": "Space",
+            "type": "Link"
+          }
+        },
+        "type": "Locale",
+        "updatedAt": "2025-05-28T13:14:53Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2ztMoetfaFsQN5UQ0EbKBY",
+            "linkType": "User",
+            "type": "Link"
+          }
+        },
+        "version": 1
+      }
+    }
+  ],
+  "tags": []
+}

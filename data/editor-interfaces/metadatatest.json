@@ -1,0 +1,51 @@
+{
+  "controls": [
+    {
+      "fieldId": "title",
+      "widgetId": "singleLine",
+      "widgetNamespace": "builtin"
+    }
+  ],
+  "sys": {
+    "contentType": {
+      "sys": {
+        "id": "metadatatest",
+        "linkType": "ContentType",
+        "type": "Link"
+      }
+    },
+    "createdAt": "2025-05-28T12:27:31.884Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link"
+      }
+    },
+    "id": "default",
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "EditorInterface",
+    "updatedAt": "2025-05-28T13:20:17.598Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "version": 14
+  }
+}

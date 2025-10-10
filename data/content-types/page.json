@@ -1,0 +1,146 @@
+{
+  "description": "",
+  "displayField": "title",
+  "fields": [
+    {
+      "defaultValue": {
+        "en-AU": "title"
+      },
+      "disabled": {},
+      "id": "title",
+      "localized": {},
+      "name": "Title",
+      "omitted": {},
+      "required": {},
+      "type": "Symbol",
+      "validations": []
+    },
+    {
+      "disabled": {},
+      "id": "slug",
+      "localized": {},
+      "name": "Slug",
+      "omitted": {},
+      "required": {},
+      "type": "Symbol",
+      "validations": [
+        {
+          "unique": {}
+        }
+      ]
+    },
+    {
+      "disabled": {},
+      "id": "author",
+      "linkType": "Entry",
+      "localized": {},
+      "name": "Author",
+      "omitted": {},
+      "required": {},
+      "type": "Link",
+      "validations": [
+        {
+          "linkContentType": [
+            "author"
+          ]
+        }
+      ]
+    },
+    {
+      "disabled": {},
+      "id": "body",
+      "localized": {},
+      "name": "Body",
+      "omitted": {},
+      "required": {},
+      "type": "RichText",
+      "validations": [
+        {
+          "enabledMarks": [
+            "bold",
+            "italic",
+            "underline",
+            "code",
+            "superscript",
+            "subscript",
+            "strikethrough"
+          ],
+          "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+        },
+        {
+          "enabledNodeTypes": [
+            "heading-1",
+            "heading-2",
+            "heading-3",
+            "heading-4",
+            "heading-5",
+            "heading-6",
+            "ordered-list",
+            "unordered-list",
+            "hr",
+            "blockquote",
+            "embedded-entry-block",
+            "embedded-asset-block",
+            "table",
+            "asset-hyperlink",
+            "embedded-entry-inline",
+            "entry-hyperlink",
+            "hyperlink"
+          ],
+          "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+        },
+        {
+          "nodes": {}
+        }
+      ]
+    }
+  ],
+  "name": "Page",
+  "sys": {
+    "createdAt": "2024-08-02T14:25:38.540Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link"
+      }
+    },
+    "firstPublishedAt": "2024-08-02T14:25:39.029Z",
+    "id": "page",
+    "publishedAt": "2025-04-28T06:37:54.688Z",
+    "publishedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "publishedCounter": 25,
+    "publishedVersion": 49,
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "ContentType",
+    "updatedAt": "2025-04-28T06:37:54.688Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/page",
+    "version": 50
+  }
+}

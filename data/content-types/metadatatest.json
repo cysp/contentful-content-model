@@ -1,0 +1,71 @@
+{
+  "description": "Content type for testing metadata fields",
+  "displayField": "title",
+  "fields": [
+    {
+      "defaultValue": {
+        "en-AU": "Default Title",
+        "en-CA": "Default Title"
+      },
+      "disabled": {},
+      "id": "title",
+      "localized": {},
+      "name": "Title",
+      "omitted": {},
+      "required": {},
+      "type": "Symbol",
+      "validations": []
+    }
+  ],
+  "metadata": {
+    "taxonomy": []
+  },
+  "name": "Metadata Test",
+  "sys": {
+    "createdAt": "2025-05-28T12:27:31.200Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link"
+      }
+    },
+    "firstPublishedAt": "2025-05-28T12:27:31.717Z",
+    "id": "metadatatest",
+    "publishedAt": "2025-05-28T13:20:17.445Z",
+    "publishedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "publishedCounter": 13,
+    "publishedVersion": 25,
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "ContentType",
+    "updatedAt": "2025-06-01T02:08:31.965Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "urn": "crn:contentful:::content:spaces/0p38pssr0fi3/environments/master/content_types/metadatatest",
+    "version": 29
+  }
+}

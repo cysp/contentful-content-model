@@ -1,0 +1,115 @@
+{
+  "controls": [
+    {
+      "fieldId": "name",
+      "widgetId": "singleLine",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "fieldId": "avatar",
+      "widgetId": "assetLinkEditor",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "fieldId": "blurb",
+      "widgetId": "richTextEditor",
+      "widgetNamespace": "builtin"
+    }
+  ],
+  "editorLayout": [
+    {
+      "groupId": "name",
+      "items": [
+        {
+          "fieldId": "name"
+        }
+      ],
+      "name": "Name"
+    },
+    {
+      "groupId": "profile",
+      "items": [
+        {
+          "groupId": "profile_about",
+          "items": [
+            {
+              "fieldId": "avatar"
+            },
+            {
+              "fieldId": "blurb"
+            }
+          ],
+          "name": "About"
+        }
+      ],
+      "name": "Profile"
+    }
+  ],
+  "groupControls": [
+    {
+      "groupId": "name",
+      "widgetId": "topLevelTab",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "groupId": "profile",
+      "widgetId": "topLevelTab",
+      "widgetNamespace": "builtin"
+    },
+    {
+      "groupId": "profile_about",
+      "widgetId": "fieldSet",
+      "widgetNamespace": "builtin"
+    }
+  ],
+  "sidebar": [
+    {
+      "disabled": {},
+      "settings": {},
+      "widgetId": "1WkQ2J9LERPtbMTdUfSHka",
+      "widgetNamespace": "app"
+    }
+  ],
+  "sys": {
+    "contentType": {
+      "sys": {
+        "id": "author",
+        "linkType": "ContentType",
+        "type": "Link"
+      }
+    },
+    "createdAt": "2024-06-30T03:28:37.830Z",
+    "createdBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "environment": {
+      "sys": {
+        "id": "master",
+        "linkType": "Environment",
+        "type": "Link"
+      }
+    },
+    "id": "default",
+    "space": {
+      "sys": {
+        "id": "0p38pssr0fi3",
+        "linkType": "Space",
+        "type": "Link"
+      }
+    },
+    "type": "EditorInterface",
+    "updatedAt": "2025-08-30T05:23:01.323Z",
+    "updatedBy": {
+      "sys": {
+        "id": "2ztMoetfaFsQN5UQ0EbKBY",
+        "linkType": "User",
+        "type": "Link"
+      }
+    },
+    "version": 51
+  }
+}
