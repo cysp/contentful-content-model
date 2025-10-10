@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "export": "node --env-file-if-exists .env tools/export.js"
+    "export-content-model": "node --env-file-if-exists .env tools/export-content-model.js"
   },
   "devDependencies": {
     "@types/node": "22.18.8",
