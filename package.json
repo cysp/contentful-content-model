@@ -19,6 +19,7 @@
     "@types/node": "22.18.8",
     "canonical-json": "0.2.0",
     "cf-content-types-generator": "2.16.1",
-    "contentful-export": "7.21.90"
+    "contentful-export": "7.21.90",
+    "semver": "7.7.3"
   }
 }
