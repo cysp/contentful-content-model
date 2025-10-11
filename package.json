@@ -1,14 +1,19 @@
 {
   "type": "module",
-  "name": "contentful-content-model",
+  "private": true,
+  "name": "@cysp/contentful-content-model-monorepo",
   "packageManager": "pnpm@10.17.1",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cysp/contentful-content-model"
+  },
   "scripts": {
     "export-content-model": "node --env-file-if-exists .env tools/export-content-model.js",
-    "cf-content-types:generate": "cf-content-types-generator data/content-model.json -o src/cf-content-types/__generated__ --v10 --typeguard"
+    "generate-contentful-content-model": "node --env-file-if-exists .env tools/generate-contentful-content-model.js",
+    "generate-contentful-content-model-types": "node --env-file-if-exists .env tools/generate-contentful-content-model-types.js"
   },
   "devDependencies": {
     "@types/node": "22.18.8",

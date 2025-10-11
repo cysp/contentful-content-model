@@ -19,8 +19,11 @@ jobs:
         with:
           run_install: true
 
-      - name: cf-content-types:generate
-        run: pnpm run cf-content-types:generate
+      - name: generate contentful-content-model
+        run: pnpm run generate-contentful-content-model
+
+      - name: generate contentful-content-model-types
+        run: pnpm run generate-contentful-content-model-types
 
       - name: git diff
         run: |
