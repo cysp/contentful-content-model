@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "@cysp/contentful-content-model",
+  "version": "0.0.1",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cysp/contentful-content-model",
+    "directory": "packages/contentful-content-model"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./content-model.json": "./content-model.json"
+  }
+}

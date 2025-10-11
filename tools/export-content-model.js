@@ -1,8 +1,8 @@
 import { mkdir, rm, writeFile } from 'node:fs/promises'
+import path from 'node:path'
 
 import { stringify } from 'canonical-json'
 import contentfulExport from 'contentful-export'
-import path from 'node:path'
 
 const managementToken = process.env.CONTENTFUL_MANAGEMENT_ACCESS_TOKEN
 if (!managementToken) {
@@ -35,23 +35,23 @@ await mkdir('data', { recursive: true })
 
 await writeFile(path.join('data', 'content-model.json'), stringify(data, undefined, 2))
 
-await mkdir(path.join('data', 'content-types'), { recursive: true })
+await mkdir(path.join('data', 'content-model', 'content-types'), { recursive: true })
 
 for (const contentType of data.contentTypes) {
   const fileName = `${contentType.sys.id}.json`
-  await writeFile(path.join('data', 'content-types', fileName), stringify(contentType, undefined, 2))
+  await writeFile(path.join('data', 'content-model', 'content-types', fileName), stringify(contentType, undefined, 2))
 }
 
-await mkdir(path.join('data', 'editor-interfaces'), { recursive: true })
+await mkdir(path.join('data', 'content-model', 'editor-interfaces'), { recursive: true })
 
 for (const editorInterface of data.editorInterfaces) {
   const fileName = `${editorInterface.sys.contentType.sys.id}.json`
-  await writeFile(path.join('data', 'editor-interfaces', fileName), stringify(editorInterface, undefined, 2))
+  await writeFile(path.join('data', 'content-model', 'editor-interfaces', fileName), stringify(editorInterface, undefined, 2))
 }
 
-await mkdir(path.join('data', 'locales'), { recursive: true })
+await mkdir(path.join('data', 'content-model', 'locales'), { recursive: true })
 
 for (const locale of data.locales) {
   const fileName = `${locale.code}.json`
-  await writeFile(path.join('data', 'locales', fileName), stringify(locale, undefined, 2))
+  await writeFile(path.join('data', 'content-model', 'locales', fileName), stringify(locale, undefined, 2))
 }
