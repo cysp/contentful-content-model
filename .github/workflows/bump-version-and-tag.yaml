@@ -1,0 +1,37 @@
+name: bump version and tag
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bump-version-and-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+
+      - uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0
+        with:
+          run_install: true
+
+      - uses: fregante/setup-git-user@024bc0b8e177d7e77203b48dab6fb45666854b35 # v2.0.2
+
+      - name: bump version
+        id: bump-version
+        run: node tools/bump-version.js
+
+      - name: commit version bump
+        run: |
+          git add .
+          git commit -m "chore: bump version to v${{ steps.bump-version.outputs.version }}"
+
+      - name: tag version
+        run: |
+          git tag "v${{ steps.bump-version.outputs.version }}"
+
+      - name: git push
+        run: |
+          git push origin HEAD
+          git push origin tag "v${{ steps.bump-version.outputs.version }}"
