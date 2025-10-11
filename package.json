@@ -3,7 +3,7 @@
   "private": true,
   "name": "@cysp/contentful-content-model-monorepo",
   "packageManager": "pnpm@10.17.1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "ISC",
   "repository": {
